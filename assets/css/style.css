@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@100;300;400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+ }
+
+:root {
+    --negro : #1b1f21;
+    --suave : #CDC3E6;
+    --celeste : #D4DCFF;
+    --azulado : #A491D2;
+    --blanco : #fff;
+    --gris1 :#E8EBE4;
+    --gris2 : #BEC1BB;
+    --gris3 :#828485;
+    --gris4 :#444749;
+
+}
+
+
+body {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    background-color:#fff;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+menu {
+    display:flex;
+    flex-direction: column;
+    width:420px;
+    height:100vh;
+    background-color: #fff;
+    border: 1px solid #BEC1BB;
+}
+
+.user {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 7vh;
+}
+
+.userImg{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 90%;
+}
+
+.userImgPhoto {
+    display: flex;
+    height: 100%;
+    width: 3.5rem;
+    margin-left: 1px solid;
+}
+
+.userImgPhoto > img {
+    align-items: stretch;
+    border-radius:50%;
+    padding: 1px;
+}
+
+.userData {
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    margin-left: 1px solid;
+}
+
+.userName {
+    display: flex;
+    align-items:end;
+    height: 50%;
+    font-size: large;
+}
+
+.userStatus {
+    display: flex;
+    text-align: left;
+    height: 50%;
+    color: #444749;
+   font-size: small;
+}
+
+.userMenu {
+    display: flex;
+    flex-direction:row;
+    align-items: end;
+    height:90%;
+    width: 40%;
+}
+
+.logo1{
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    height: 90%;
+    width: 50%;
+}
+
+.logo2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    width: 50%;
+}
+
+.fa-solid {
+    color:#828485; 
+    font-size:x-large; 
+}
+
+.fa-regular {
+    color:#828485;
+    font-size:x-large;    
+}
+
+.newChat {
+    display: flex;
+    height:14vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;    
+    border: 1px solid #BEC1BB;
+}
+.newChatButton {
+    display: flex;
+    height:36%;
+    width: 64%;
+    background-color: #A491D2;
+    font-size-adjust:80%;
+    align-items: center;
+    justify-content: center;
+}
+
+.newChatButton > p {
+    font-weight: bold;
+    font-size: larger;
+}
+
+.newChatButton > p > a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.contacts {
+    display: flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    width:100%;
+    border: 1px solid #BEC1BB;
+}
+
+.contact {
+    display: flex;
+    flex-direction:row;
+    height:8vh;
+    width:100%;
+    border: 1px solid #BEC1BB;
+}
+.contactImg {
+    display: flex;
+    justify-content: center;
+    width:70px;
+    margin-left:1rem;
+}
+
+.contactImg > img {
+    display: flex;
+    align-items:stretch;
+    border-radius:50%;
+    padding: 0.5rem;
+}
+.contactData {
+    display: flex;
+    flex-direction:column;
+    align-items:start;
+    justify-content: flex-end;
+    font-size: large;
+    padding: 10px;
+    color: #1b1f21;
+}
+
+.contactStatus {
+    display: flex;
+    justify-content: flex-start;
+    text-align:start;
+    font-size: small;
+}
+
+.main {
+    display: flex;
+    width:100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:#E8EBE4 ;
+}
+.mainImg {
+    display: flex;
+    justify-content: center;
+    min-width:25%;
+    height:40%;
+    margin-bottom:1rem;
+}
+
+.mainImg > img {
+    border-radius:10px;
+}
+
+.mainText {
+    display: flex;
+    flex-direction: column;
+    width:50%;
+    align-items: center;
+    font-size: larger;
+    text-align: center;
+    gap:20px;
+}
+
+.mainText > h2 {
+        font-size:3rem;
+}
+.mainText > p {
+    font-size:large;
+}
+.mainText > p > b {
+
+    font-weight: 900;
+}
+
+
+
+.contactImg :hover {
+    transform: scale(1.5);
+}
+
+label,textarea {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+textarea {
+  padding: 10px;
+  max-width: 100%;
+  line-height: 1.5;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #999;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
